@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 5%;
+    line-height: 19.5px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19.5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%),
+        url(image/main_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+header nav {
+    width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navContacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 20px;
+    width: 100%;
+}
+
+.navList {
+    width: 100%;
+    display: flex;
+}
+
+.navList li {
+    width: 100%;
+}
+
+.navList a {
+    height: 46px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-left: none;
+}
+
+.navList li:last-child > a {
+    border-right: none;
+}
+
+.button {
+    margin: auto 0 150px;
+    color: white;
+}
+
+.button > a {
+    background-color: #998431;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.button a:first-child {
+    margin-right: 30px;
+}
+
+main {
+    width: 100%;
+}
+
+article {
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 {
+    width: 1110px;
+    border: 3px solid #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 187px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+#section1 img {
+    width: 160px;
+    height: 160px;
+    margin-top: 50px;
+}
+
+#section1 hr {
+    width: 160px;
+    height: 1px;
+    background-color: #fff;
+    margin: 40px 0;
+}
+
+article:nth-child(2) {
+    background-color: #E6E3C4;
+}
+
+#section2 {
+    width: 1110px;
+    padding: 60px 0;
+    border: 1px solid #998431;
+    border-left: none;
+    border-right: none;
+    margin: 80px 0;
+    display: flex;
+    color: #282828;
+}
+
+.wineList * {
+    margin-bottom: 30px;
+}
+
+.wineList *:last-child {
+    margin: 0;
+}
+
+.wineList hr {
+    background-color: #282828;
+    width: 160px;
+    height: 1px;
+}
+
+.wineTable {
+    border: 2px solid #E6E3C4;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid #282828;
+}
+
+tr {
+    border: 1px solid #282828;
+}
+
+.wineTable th:first-child {
+    padding: 0 24px;
+}
+
+.wineTable th:last-child {
+    padding: 10px 30px 15px;
+}
+
+.wineTable th:last-child *:first-child {
+    margin-bottom: 5px;
+}
+
+.collage {
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 125px;
+}
+
+.collage img:first-child {
+    margin-bottom: 30px;
+}
+
+#section3 {
+    width: 1110px;
+    margin: 100px 0;
+    border: 3px solid #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 41px;
+}
+
+#section3 aside {
+    width: 540px;
+}
+
+.tastingTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -39px;
+}
+
+.tastingTitle .title {
+    padding: 10px 50px;
+    background-color: #282828;
+}
+
+.tastingTitle hr {
+    margin: 40px 0;
+    background-color: #FFFFFF;
+    width: 118px;
+    height: 1px;
+}
+
+.tastingForm {
+    position: relative;
+    top: -39px;
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tastingForm button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #282828;
+    border: 1px solid white;
+    color: inherit;
+    cursor: pointer;
+}
+
+#deg1 {
+    position: absolute;
+    top: -69px;
+    left: -30px;
+}
+
+#deg2 {
+    position: absolute;
+    top: -64px;
+    right: -53px;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19.5px;
+    background-color: #282828;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    width: 255px;
+}
+
+input:last-of-type {
+    margin: 40px 0 50px;
+    flex-grow: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+} 
+
+input::-moz-placeholder {
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: #998431;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer nav {
+    width: 1110px;
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer nav > * {
+    padding: 0 95px;
+}
+
+footer nav > * > * {
+    padding: 20px 0;
+}
+
+.footerNavList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.footerContacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerContacts > * {
+    font-weight: 600;
+}
+
+footer hr {
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.footerLogo {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogo a {
+    display: flex;
+    align-items: center;
+}
